@@ -132,7 +132,8 @@ button:hover {
      font-size: 11px;
      text-align: center;
      margin-left: 2em;
-
+     position: absolute;
+     bottom: 1rem;
 
 }
 
