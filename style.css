@@ -19,6 +19,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0 5em;
+    flex-grow: 1;
 }
 
 h1 {
@@ -47,7 +48,6 @@ p {
 .sedans {
     background-color: hsl(31, 77%, 52%);
     padding: 3em;
-    height: 60%;
     border-radius: .5em;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -56,14 +56,13 @@ p {
 .suvs {
      background-color: hsl(184, 100%, 22%);
      padding: 3em;
-     height: 60%;
+     
     
 }
 
 .luxury {
     background-color: hsl(179, 100%, 13%);
     padding: 3em;
-    height: 60%;
     border-radius: .5em;
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
@@ -79,11 +78,17 @@ p {
      border-color: inherit;
      font-weight: 400;
      font-family: "Lexend Deca";
-     cursor: pointer;
+     border: 0;
 }
 
-.big-btn {
-    margin-top: 5em; 
+button {
+      margin-top: 3em;
+      transition: opacity 250ms ease-in-out;
+}
+
+button:hover {
+      cursor: pointer;
+      opacity: 0.6;
 }
 
 .btn1 {
@@ -117,16 +122,18 @@ p {
            border-bottom-left-radius: 0%;
            border-bottom-right-radius: 0%;
       }
+      .luxury {
+            border-top-right-radius: 5em;
+      }
 }
 
 
+.attribution { 
+     font-size: 11px;
+     text-align: center;
+     margin-left: 2em;
 
 
+}
 
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center;  }
 .attribution a { color: hsl(228, 45%, 44%); }
